@@ -11,6 +11,11 @@ const ingredients = [
 
 const ulEl = document.querySelector('#ingredients');
 
-const list = ingredients.reduce((str, item) => str + `<li>${item}</li>`, '');
+for (let i = 0; i < ingredients.length; i += 1) {
+  const liEl = document.createElement('li');
+  liEl.textContent = ingredients[i];
+  liEl.classList.add('item');
+  ulEl.append(liEl);
+  console.log(ulEl);
+}
 
-ulEl.innerHTML = list;
