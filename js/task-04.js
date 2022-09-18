@@ -1,4 +1,4 @@
-"use strict";
+
 
 const refs = {
     valueId: document.querySelector("#value"),
